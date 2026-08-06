@@ -1,0 +1,14 @@
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# App bundle output
+build/
+
+# macOS
+.DS_Store
+
+# Chrome extension (has its own, kept here too for a repo-wide view)
+chrome-extension/node_modules/
+chrome-extension/dist/
+chrome-extension/.keys/

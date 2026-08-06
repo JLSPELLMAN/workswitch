@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "WorkSwitch Tab Bridge",
+  "version": "0.2.0",
+  "description": "Sends Chrome tab metadata to the WorkSwitch macOS app so tabs appear in the switcher.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQd3dBJyw2FDBxUB6i7YlaGkN2+mZLleuiiO4rDeInVUvUM3Z5e60NqE3YI8M+WjaarECiq7VjfHwROXSTIQPmCPDkfu1ZBhVOrTtey2k20GCfkCuSe6B54skaqn48sPGSJ35rIwTj5ITz1gJUnBkSMbKsN0oHlcHKOPjrbGRMxscG+OExmpazrJs0ggnp+dMA8C1j3X/MYX0oGvUIYiIU9Z2Qwnhk1gTH8uNt7mYGyHksryxC0jLTaAsgyK3jAOVc1xZbWj1SuIcMdbbH3sFUI1drnMI3b3NroboPHrCoOV98vg0CG9WGDe4DSFEh8rw9IUoLTNKx+s4sJzCIlnwIDAQAB",
+  "background": {
+    "service_worker": "dist/background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "tabs",
+    "nativeMessaging",
+    "alarms"
+  ],
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "minimum_chrome_version": "116"
+}

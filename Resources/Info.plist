@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>WorkSwitch</string>
+	<key>CFBundleDisplayName</key>
+	<string>WorkSwitch</string>
+	<key>CFBundleExecutable</key>
+	<string>WorkSwitch</string>
+	<!-- Must never change: the Accessibility (TCC) grant is keyed to this identifier. -->
+	<key>CFBundleIdentifier</key>
+	<string>com.lorenzospellman.workswitch</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.0</string>
+	<!-- Menu-bar only: no Dock icon. -->
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSSupportsAutomaticTermination</key>
+	<false/>
+	<key>NSSupportsSuddenTermination</key>
+	<false/>
+	<!-- Required for any Apple Event WorkSwitch sends (Chrome window enumeration/activation
+	     via ChromeAppleScriptProvider) — without this key macOS denies Automation silently,
+	     with no prompt at all, instead of asking the user. -->
+	<key>NSAppleEventsUsageDescription</key>
+	<string>WorkSwitch lists and switches to your open Chrome windows, including ones Accessibility can't see across virtual desktops.</string>
+</dict>
+</plist>
